@@ -18,10 +18,11 @@
     "moduleResolution": "Node",
     "skipLibCheck": true,
     "sourceMap": true,
-    "target": "ES2017",
-    "types": ["vite/client"]
+    "target": "ES2023",
+    "types": ["vite/client", "node"]
   },
   "include": ["src/**/*", "types/*", "server.ts", "node_modules/vite/types/*"],
+  "exclude": ["node_modules"],
   "ts-node": {
     "transpileOnly": true,
     "compilerOptions": {
