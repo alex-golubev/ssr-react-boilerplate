@@ -9,7 +9,7 @@
     "@typescript-eslint/eslint-plugin"
   ],
   "extends": [
-    "plugin:@typescript-eslint/recommeded",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "eslint:recommended"
