@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import { createRoot, hydrateRoot } from 'react-dom/client';
+import './index.css';
 
 const container = document.getElementById('app') as HTMLElement;
 

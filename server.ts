@@ -69,8 +69,8 @@ async function createServer(isProduction: boolean = process.env.NODE_ENV === 'pr
 
   const baseTemplatePath = isProduction ? resolvePath('client/index.html') : resolvePath('index.html');
   const baseTemplate = await readFile(baseTemplatePath, 'utf8');
-  const productionBuildPath = resolve(__dirname, './server/entry-server.js');
-  const developmentBuildPath = resolve(__dirname, './src/client/entry-server.js');
+  const productionBuildPath = resolve(__dirname, 'server/entry-server.js');
+  const developmentBuildPath = resolve(__dirname, 'src/client/entry-server.tsx');
   const buildMode = isProduction ? productionBuildPath : developmentBuildPath;
   const { render } = await vite.ssrLoadModule(buildMode);
 
