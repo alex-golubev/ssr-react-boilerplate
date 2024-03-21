@@ -1,20 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
+import type { JSX } from 'react'
 
-export const Counter = () => {
-  const [counter, setCounter] = useState<number>(0);
+export const Counter = (): JSX.Element => {
+  const [counter, setCounter] = useState<number>(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCounter(prevState => prevState + 1);
-    }, 3000);
+      setCounter(prevState => prevState + 1)
+    }, 3000)
     return () => {
-      clearInterval(timer);
-    };
-  }, []);
+      clearInterval(timer)
+    }
+  }, [])
 
-  const onClickHandler = () => {
-    setCounter(prevState => prevState + 1);
-  };
+  const onClickHandler = (): void => {
+    setCounter(prevState => prevState + 1)
+  }
 
   return (
     <main className="flex items-center flex-col justify-between h-screen">
@@ -29,5 +30,5 @@ export const Counter = () => {
         </button>
       </div>
     </main>
-  );
-};
+  )
+}

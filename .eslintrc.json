@@ -1,29 +1,21 @@
 {
   "env": {
     "browser": true,
-    "node": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
-  "plugins": [
-    "@typescript-eslint",
-    "@typescript-eslint/eslint-plugin",
-    "react",
-    "react-hooks"
-  ],
   "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended",
-    "eslint:recommended"
+    "standard-with-typescript",
+    "plugin:react/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "plugins": [
+    "react"
+  ],
+  "ignorePatterns": ["vite.config.ts"],
   "rules": {
     "react/react-in-jsx-scope": "off"
   }
