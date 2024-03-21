@@ -1,7 +1,5 @@
+import { Counter } from './Components/Counter';
+
 export const App = () => {
-  return (
-    <div>
-      <h1>React SSR</h1>
-    </div>
-  );
+  return <Counter />;
 };
