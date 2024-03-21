@@ -6,8 +6,6 @@ import { createServer as createViteServer } from 'vite';
 import compression from 'compression';
 import serveStatic from 'serve-static';
 import type { NextFunction, Request, Response } from 'express';
-import * as process from 'process';
-import * as console from 'console';
 
 const isTest = process.env.NODE_ENV === 'test' || !!process.env.VITE_TEST_BUILD;
 
