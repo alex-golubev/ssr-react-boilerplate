@@ -6,11 +6,12 @@ import type { UserConfig } from 'vitest/config'
 const test = {
   globals: true,
   environment: 'jsdom',
-  setupFiles: ['src/__tests__/setup.ts'],
+  setupFiles: ['test.setup.ts'],
   threads: false,
   watch: false
 } as UserConfig['test']
 
+// noinspection JSUnusedGlobalSymbols
 export default defineConfig({
   plugins: [react()],
   server: { port: 3000 },

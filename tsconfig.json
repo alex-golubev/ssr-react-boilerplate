@@ -19,7 +19,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "target": "ES2017",
-    "types": ["vite/client", "node"]
+    "types": ["vite", "vite/client", "vitest", "node", "jest", "@testing-library/jest-dom"]
   },
   "include": ["src/**/*", "types/*", "server.ts", "node_modules/vite/types/*"],
   "exclude": ["node_modules"],

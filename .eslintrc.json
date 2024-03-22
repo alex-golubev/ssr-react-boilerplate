@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": [
     "standard-with-typescript",
@@ -15,7 +16,7 @@
   "plugins": [
     "react"
   ],
-  "ignorePatterns": ["vite.config.ts"],
+  "ignorePatterns": ["vite.config.ts", "test.setup.ts"],
   "rules": {
     "react/react-in-jsx-scope": "off"
   }
