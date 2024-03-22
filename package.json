@@ -23,8 +23,7 @@
     "serve": "npm run build && cross-env NODE_ENV=production node ./dist/server",
     "serve:local": "vite serve",
     "typecheck": "tsc --noEmit",
-    "clean": "rimraf dist/",
-    "format": "prettier --write src types"
+    "clean": "rimraf dist/"
   },
   "dependencies": {
     "compression": "^1.7.4",
